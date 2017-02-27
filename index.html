@@ -1,0 +1,758 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="">
+
+    <meta name="author" content="">
+  
+  	<link rel="icon" href="../../favicon.ico">
+
+
+    	<title>TempleDundo.com</title>
+
+   
+
+<!-- Bootstrap core CSS -->
+   
+ 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+   
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  
+	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+ 
+	<link href="css/thumbnail-slider.css" rel="stylesheet" type="text/css" />
+
+
+
+    
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+ 
+<!--[if lt IE 9]>
+	<script src="../../assets/js/ie8-responsive-file-warning.js"></script>
+<![endif]-->
+    
+	<script src="js/ie-emulation-modes-warning.js"></script>
+
+
+
+
+<!-- Custom styles for this template -->
+/*!
+  
+	<link href="css/style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+ 
+</head>
+
+
+<!-- NAVBAR
+== -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" ng-app="myApp">
+
+<p><a href="#/">Index</a></p>
+
+<a href="#Home">Home</a>
+<a href="#AboutUs">AboutUs</a>
+<a href="#Gallery">Gallery</a>
+<a href="#PlaceBooking">PlaceBooking</a>
+<a href="#Review">Review</a>
+<a href="#contactus">contactus</a>
+
+
+
+<div ng-view></div>
+
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "Home.htm"
+    })
+    .when("/AboutUs", {
+        templateUrl : "aboutus.htm"
+    })
+    .when("/Gallery", {
+        templateUrl : "gallery.htm"
+    })
+    .when("/PlaceBooking", {
+        templateUrl : "placebooking.htm"
+    })
+	
+    .when("/Review", {
+        templateUrl : "Review.htm"
+    })
+	
+    .when("/contactus", {
+        templateUrl : "contactus.htm"
+    });
+});
+</script>
+
+ 
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-wrapper">
+  	
+	<div class="container">
+      
+	<div class="navbar navbar-default navbar-fixed-top">
+    
+	<div class="navbar-header">
+		<a class="col-lg-offset-0 navbar-brand" style="text-decoration:none;font-family:Brush Script Std, Brush Script MT, cursive;color:orange;font-size:25px;font-weight:bold href="index.html">
+		<img src="images/download.jpg" height="50">Templedundo.com</a>
+
+	
+		<a style="text-decoration:none;color:orange;font-family:Brush Script Std,Brush Script MT,cursive;font-size:50px;font-weight:bold""href="index.html">Temples Of North India</a>
+                
+		<a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+   
+             	<span class="icon-bar"></span>
+             
+   		<span class="icon-bar"></span>
+           
+     		<span class="icon-bar"></span>
+            
+  		</a>
+        
+    	</div>
+         
+   	<div class="navbar-collapse collapse" id="myNavbar">
+         
+     	    <ul class="nav navbar-nav navbar-right">
+            
+    		<li><a href="#index.html">Home</a></li>
+            
+    		<li><a href="aboutus.html">AboutUs</a></li>
+             
+   		<li><a href="gallery.html">Gallery</a></li>
+        
+        	<li><a href="placebooking.html">Place Booking</a></li>
+      
+          	<li><a href="review.html">Review</a></li>
+           
+     		<li><a href="contactus.html">ContactUs</a></li>
+         
+     	 
+	     
+              
+            	<form class="navbar-form" role="search">
+        
+        <div class="input-group">
+          
+            	<input type="text" class="form-control" placeholder="Search for Temple" name="q">
+    
+        <div class="input-group-btn">
+                     
+     		<button class="btn btn-default" type="submit">
+		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</button>
+      
+        
+	</div>
+         
+        </div>
+            
+		</form>
+         
+     	</div>
+     
+        </div>
+
+        </div>
+ 
+     	</div>
+
+    	</div>
+</nav>
+
+
+
+
+<!-- Carousel
+     -->
+  
+ 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+<!-- Indicators -->
+     
+	<ol class="carousel-indicators">
+       
+ 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  
+      		<li data-target="#myCarousel" data-slide-to="1"></li>
+  
+      		<li data-target="#myCarousel" data-slide-to="2"></li>
+  
+    	</ol>
+
+      	<div class="carousel-inner" role="listbox">
+  
+      	<div class="item active">
+
+          	<img class="first-slide" src="images/r.jpg" alt="First slide">
+
+        <div class="container">
+  
+        <div class="carousel-caption">
+ 
+             	<h1>Welcome to templedundo.com</h1>
+  
+          
+              <p>Search your favourite temple</p>
+
+        </div>
+   
+        </div>
+ 
+        </div>
+  
+        <div class="item">
+  
+        	<img class="second-slide" src="images/v.jpg" alt="Second slide">
+ 
+        <div class="container">
+
+        <div class="carousel-caption">
+   
+           	<h1>Book</h1>
+ 
+             
+              <p>Book your temple</p>
+    
+        </div>
+ 
+        </div>
+  
+        </div>
+ 
+        <div class="item">
+     
+     		<img class="third-slide" src="images/vai.jpg" alt="Third slide">
+   
+        <div class="container">
+
+        <div class="carousel-caption">
+  
+            	<h1>Enjoy</h1>
+  
+          
+                <p>Enjoy your tour</p>
+
+        </div>
+         
+ 	</div>
+   
+     	</div>
+
+      	</div>
+  
+    		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+   
+     		<span class="sr-only">Previous</span>
+  
+    		</a>
+ 
+     		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    
+    		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+   
+     		<span class="sr-only">Next</span>
+
+      		</a>
+  
+  	</div>
+<!-- /.carousel -->
+
+
+ 
+  
+<!--Section -->
+   
+<section class="bg-primary">
+ 
+     	<div class="container center767">
+ 
+       	<div class="row">
+  
+        <div class="col-md-5 col-sm-6 col-xs-12 text-center">
+    
+      		<img src="images/vin.jpg" alt="">
+   
+        </div>
+   
+        <div class="col-md-7 col-sm-6 col-xs-12 border-add md-add">
+     
+     		<h2 class="ttu">Welcome!</h2>
+  
+			<p class="p__mod">Custodians of beliefs of more than a billion people: the holy places of India cross the boundaries of time to sanctify the lives around them.</p> 
+       			<p class="p__mod">Templedundo.com provides you the best way to search temples which are present in north india.
+There are many famous temples you can search in our site. Select your temple, book for a trip, and enjoy. We also provide the special darsans for some of the famous temples of North India.  </p>
+  
+        
+   
+       </div>
+ 
+       </div>
+  
+    </div>
+   
+ </section>
+
+  
+  <!-- Marketing messaging and featurettes
+    ===== -->
+  
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  
+  <div class="container marketing">
+
+   
+   <!-- Three columns of text below the carousel -->
+  
+    <div class="row">
+      
+  <div class="col-lg-4 col-md-4 col-sm-4">
+   
+       <img class="img-thumbnail" src="images/back.jpg" width="250" height="250">
+    
+      <h2>Golden Temple</h2>
+     
+     <p>Amritsar</p>
+        
+  <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Harmandir_Sahib" role="button">View details &raquo;</a></p>
+ 
+       </div><!-- /.col-lg-4 -->
+      
+  <div class="col-lg-4 col-md-4 col-sm-4">
+  
+        <img class="img-thumbnail" src="images/rishikesh.jpg" width="250" height="250">
+    
+      <h2>Neelkanth Mahadev Temple</h2>
+       
+   <p>Rishikesh</p>
+     
+     <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Rishikesh" role="button">View details &raquo;</a></p>
+  
+      </div><!-- /.col-lg-4 -->
+    
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   
+       <img class="img-thumbnail" src="images/ganga.jpg" width="250" height="250">
+     
+     <h2>Kashi Vishwanath Temple</h2>
+       
+   <p>Varanasi</p>
+   
+       <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Kashi_Vishwanath_Temple" role="button">View details &raquo;</a></p>
+     
+     </div><!-- /.col-lg-4 -->
+  
+    </div><!-- /.row -->
+   
+ </div>
+
+  
+
+
+
+ <div class="container marketing">
+
+   
+   <!-- Three columns of text below the carousel -->
+  
+    <div class="row">
+      
+  <div class="col-lg-4 col-md-4 col-sm-4">
+   
+       <img class="img-thumbnail" src="images/d.jpg" width="250" height="250">
+    
+      <h2>vaishno devi Temple</h2>
+     
+     <p>Jammu & Kashmir</p>
+        
+  <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Vaishno_Devi" role="button">View details &raquo;</a></p>
+ 
+       </div><!-- /.col-lg-4 -->
+      
+  <div class="col-lg-4 col-md-4 col-sm-4">
+  
+        <img class="img-thumbnail" src="images/ayodhya.jpg" width="250" height="250">
+    
+      <h2>Ram Mandir</h2>
+       
+   <p>Ayodhya</p>
+     
+     <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Ayodhya" role="button">View details &raquo;</a></p>
+  
+      </div><!-- /.col-lg-4 -->
+    
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   
+       <img class="img-thumbnail" src="images/haridwar.jpg" width="250" height="250">
+     
+     <h2>Ganga Temple</h2>
+       
+   <p>Haridwar</p>
+   
+       <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Haridwar" role="button">View details &raquo;</a></p>
+     
+     </div><!-- /.col-lg-4 -->
+  
+    </div><!-- /.row -->
+   
+ </div>
+
+  
+
+
+<div class="container marketing">
+
+   
+   <!-- Three columns of text below the carousel -->
+  
+    <div class="row">
+      
+  <div class="col-lg-4 col-md-4 col-sm-4">
+   
+       <img class="img-thumbnail" src="images/mahadev.jpg" width="250" height="250">
+    
+      <h2>Amarnath Temple</h2>
+     
+     <p>Srinagar</p>
+        
+  <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Amarnath_Temple" role="button">View details &raquo;</a></p>
+ 
+       </div><!-- /.col-lg-4 -->
+      
+  <div class="col-lg-4 col-md-4 col-sm-4">
+  
+        <img class="img-thumbnail" src="images/b.jpg" width="250" height="250">
+    
+      <h2>Bakhorapur Temple</h2>
+       
+   <p>Bihar</p>
+     
+     <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Arrah" role="button">View details &raquo;</a></p>
+  
+      </div><!-- /.col-lg-4 -->
+    
+    <div class="col-lg-4 col-md-4 col-sm-4">
+   
+       <img class="img-thumbnail" src="images/Somnath.jpg" width="250" height="250">
+     
+     <h2>Somnath Temple</h2>
+       
+   <p>Gujarat</p>
+   
+       <p><a class="btn btn-default" href="https://en.wikipedia.org/wiki/Somnath_temple" role="button">View details &raquo;</a></p>
+     
+     </div><!-- /.col-lg-4 -->
+  
+    </div><!-- /.row -->
+   
+ </div>
+
+  
+
+
+  <!-- parallax-->
+   
+  <div class="parallax-target section-1" data-parallax="scroll" data-image-src="images/parallax1.jpg">
+   
+ </div>
+   
+ 	<div class="middle section-2"></div>
+
+  
+	<hr class="featurette-divider">
+    
+
+<!-- START THE FEATURETTES -->
+  
+<section class="bg-sec">
+    
+  	<div class="container center767">
+   
+     	<div class="row">
+       
+    	<div class="col-md-7 col-sm-6 col-xs-12 md-add">
+      
+      		<h2>SPECIALITY OF INDIAN TEMPLES</h2>
+     
+     			<p class="p__mod">India has been praised by some of the great people who have lived on the Earth. The evidence of Indian civilization can be traced back to thousands of years. No other place can vouch for the sort of diversity, which fills every nook and cranny of this incredible country. The various religions, languages, dialects, traditions and customs provide many facets of the majestic country called India.</p>
+			<p class="p__mod">India is a divine abode of thousands of Gods and Goddesses who bless the country with their presence all over. 
+			From Kashmir to Kanyakumari, the number of temples found in this country is something very extraordinary. What is more exceptional is the way these temples have been designed with utmost dexterity and precision.
+			The beauty of the architectural style of these holy places demands serious adulation.</p>
+     
+     
+ 	</div>
+      
+    	<div class="col-md-5 col-sm-6 col-xs-12 text-center">
+    
+      		<img src="images/krishna.jpg" alt="">
+     
+     	</div>  
+    
+    	</div>
+ 
+     	</div>
+  
+  	</section>
+  
+    <hr>
+  
+<!-- -->
+   
+		<h1 align="center"style="text-decoration:none;color:orange;font-family:Brush Script Std,Brush Script MT,cursive;font-size:60px;font-weight:bold">Temple History </h1>
+     
+   	<div id="thumbnail-slider">
+       
+     	<div class="inner">
+      
+    <ul>
+                 
+   		<li>
+<a class="thumb" href="images/amarnath.jpg" />
+</li>
+        
+            	<li>
+<a class="thumb" href="images/g.jpg"></a>
+</li>
+            
+        	<li>
+ <a class="thumb" href="images/badri.jpg"></a>
+</li>
+                
+    		<li><a class="thumb" href="images/v.jpg"></a>
+</li>
+                 
+  		<li>
+<a class="thumb" href="images/rish.jpg"></a>
+</li>
+                   
+ 		<li><a class="thumb" href="images/var.jpg"></a>
+</li>
+                
+   		<li>
+<a class="thumb" href="images/kedarnath.jpg"></a>
+</li>
+            
+        	<li>
+<a class="thumb" href="images/leh.jpg"></a>
+</li>
+              
+      		<li>
+<a class="thumb" href="images/jakhoo.jpg"></a>
+</li>
+                 
+   		<li>
+<a class="thumb" href="images/lotus.jpg"></a>
+</li>
+               
+     </ul>
+           
+ 	</div>
+       
+ 	</div>
+  
+
+<!--Thumb nail closed -->
+    
+<!-- /END THE FEATURETTES -->
+     
+
+<!-- FOOTER -->
+    
+ <footer>
+      
+  <footer>
+   
+ 	<div class="footer" id="footer">
+     
+   	<div class="container">
+          
+  	<div class="row">
+             
+   	<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+    
+        	<h3>Corporate Office</h3>
+         
+           <ul>
+                     
+   		<li> <a href="#"> CoWork 247,#201/202, </a> </li>
+         
+               	<li> <a href="#"> 1st AA Cross,2nd Main Road </a> </li>
+             
+           	<li> <a href="#"> Kasturinagar,Bengaluru-560043, </a> </li>
+                 
+       		<li> <a href="#"> Karnataka,India. </a> </li>
+               
+     	   </ul>
+            
+    	</div>
+            
+    	<div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+    
+                <h3> Contact Details </h3>
+              
+      	   <ul>
+                  
+      		<li> <a href="#"> Amplus</a> </li>
+      
+                <li> <a href="#"> Manager: Ms.Deepti K </a> </li>
+                    
+            
+            	<li> <a href="#"> Ph: +91-9686189054 </a> </li>
+            
+           </ul>
+           
+     	</div>
+         
+        <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+     
+               	<h3> GoTo </h3>
+             
+       	  <ul>
+                      
+  		<li> <a href="#"> Home </a> </li>
+            
+            	<li> <a href="#"> AboutUs </a> </li>
+            
+            	<li> <a href="#"> Gallery </a> </li>
+                 
+       		<li> <a href="placebooking.html"> PlaceBooking </a> </li>
+ 
+		<li> <a href="#"> Review </a> </li> 
+		<li> <a href="contactus.html"> ContactUs </a> </li>       
+          </ul>
+             
+   	</div>
+                       
+   	<div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+         
+           	<h3> Email </h3>
+                  
+  	  <ul>
+                     
+   		<li>
+                 
+  	<div class="input-append newsletter-box text-center">
+        
+            	<input type="text" class="full text-center" placeholder="Email ">
+           
+                <button class="btn  bg-gray" type="button"><a href="mailto:hr@amplusgroup.co.in">hr@amplusgroup.co.in</a><i class="fa fa-long-arrow-right"> </i>
+		</button>
+ 
+    	</div>
+                 
+       		</li>
+               
+     	  </ul>
+                   
+  <ul class="social">
+           
+		<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+		<a href="https://www.linkedin.com/uas/login"><i class="fa fa-linkedin"></i></a>
+		<a href="https://github.com/login"><i class="fa fa-github"></i></a>         
+          </ul>
+          
+      	</div>
+          
+  	</div>
+         
+ <!--/.row--> 
+       
+ 	</div>
+     
+ <!--/.container--> 
+  
+  	</div>
+   
+ <!--/.footer-->
+    
+ 
+   	<div class="footer-bottom">
+    
+   	<div class="container">
+      
+      		<p class="pull-left"> Copyright All right reserved. </p>
+        
+               
+     	</ul> 
+       
+     	</div>
+     
+	</div>
+  
+	</div>
+   
+<!--/.footer-bottom-->
+
+
+   </footer>
+   
+   </footer>
+
+   
+	</div>
+<!-- /.container -->
+
+
+ 
+ 
+<!-- Bootstrap core JavaScript
+ -->
+   
+
+<!-- Placed at the end of the document so the pages load faster -->
+
+  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+ 
+	<script src="js/bootstrap.min.js"></script>
+  
+
+<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+   
+
+	<script src="js/vendor/holder.min.js"></script>
+   
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  
+	
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+     
+	<script src="js/thumbnail-slider.js" type="text/javascript"></script>
+   
+	<script src="js/parallax.min.js"></script>
+ 
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,556 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > 
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+
+/* Carousel base class */
+
+.carousel {
+  height: 500px;
+  
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption {
+  z-index: 10;
+}
+
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+
+.featurette-divider {
+  margin: 80px 0; 
+/* Space out the Bootstrap <hr> more */
+}
+
+
+/* Thin out the marketing headings */
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  
+.navbar-wrapper {
+    margin-top: 20px;
+  }
+
+ .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+ 
+ .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+  /* The navbar becomes detached from the top, so we round the corners */
+
+  .navbar-wrapper .navbar {
+    border-radius: 0px;
+  }
+
+
+  /* Bump up size of carousel content */
+  
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+
+.parallax-target {
+    min-height: 400px;
+    background: transparent;
+}
+
+.footer {
+    margin-top: 75px;
+    background: #262626;
+    min-height: 350px;
+    max-height: 100%;
+    padding-top: 25px;
+    border-top: 1px solid #eee;
+    color:#fff;
+}
+
+.contact-footer li {
+    line-height: 25px;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 300;
+}
+
+.contact-footer li a { color: #555 }
+
+.contact-footer li i { font-size: 14px }
+
+.tags-footer li a {
+    color: #666;
+    background: rgba(50,50,50,0.1);
+    display: block;
+    float: left;
+    font-size: 13px;
+    line-height: 1;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    padding: 6px 10px;
+    font-family: Roboto;
+    font-weight: 300;
+    border-radius: 2px;
+}
+
+.tags-footer li a:hover{
+    background: rgba(50,50,50,0.2);
+    color:#555;
+    text-decoration: none;
+}
+.promo-text-footer {
+    font-size: 19px;
+    font-family: roboto;
+    font-weight: 300;
+    color: ##0B0101;
+    padding-bottom: 11px;
+}
+
+.promo-paragraph {
+    padding:0 130px; 
+    text-align:center;
+    margin-top:15px;
+    font-family: roboto; 
+    font-weight:300;
+    line-height:1.5;
+    font-size: 14px;
+}
+
+.color{
+  background-color: black;
+}
+#imaginary_container{
+    margin-top:20%; /* Don't copy this */
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+
+.stylish-input-group .form-control{
+  border-right:0; 
+  box-shadow:0 0 0; 
+  border-color:#ccc;
+}
+
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.form-control{
+  border-radius: 0px;
+background-color: #fffaf080;
+}
+
+.nav{
+  margin-right: 46px;
+margin-left: 65px;
+}
+
+.navbar{
+  border-radius: 0px;
+  font-size:18px;
+  font-style: italic;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav >
+ .active > a:hover{
+  color:#ffffff;
+  background:#fc5a1b;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li >
+ a:hover {
+    color:#ffffff;
+  background:#fc5a1b;
+}
+
+.bg-primary {
+    background: #e5e5e5;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    }
+
+
+    .bg-sec {
+  
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 46px 0px 46px 61px;
+    margin-bottom: 60px;
+    background: #e6e6e6;
+    }
+
+.border-add {
+    border-left: 2px solid #5c5c5c;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 28px;
+    padding-bottom: 48px;
+}
+
+.p__mod {
+    font-size: 16px;
+    line-height: 22px;
+    color: #777777;
+}
+*+p{
+    margin-top: 28px;
+}
+.ttu{
+  color:black;
+}
+.featurette {
+    display: table;
+    width: 100%;
+    height: 30%; 
+/* set a pixel height and then remove the body,html height */
+ vertical-align: middle;
+}
+
+.featurette-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.featurette .search {
+    padding: 3%;
+    max-width: 980px; /*max width of search*/
+    margin: 0 auto;
+}
+
+.no-margin-top {
+    margin-top: 0
+}
+
+
+/* ------ form-control-lg */
+
+.form-control-lg {
+    min-height: 46px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: normal;
+}
+
+
+
+/* ------ disjointed form group custom */
+
+.featurette .search.has-button .btn {
+    margin-top: 5px;
+    width: 100%;
+}
+
+@media (min-width:480px) { 
+    .featurette .search.has-button .form-group {
+        position: relative;
+        padding-right: 99px; /*space for button*/
+    }
+    
+.featurette .search.has-button .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        margin: 0;
+    }
+}
+.full {
+    width: 100%;  
+}
+
+.gap {
+  height: 30px;
+  width: 100%;
+  clear: both;
+  display: block;
+}
+
+.footer {
+  background: #262626;;
+  height: auto;
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #CCCCCC;
+  border-top: 1px solid #DDDDDD;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer img {
+  max-width: 100%;
+}
+
+.footer h3 {
+  border-bottom: 1px solid #BAC1C8;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 40px 0 10px;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  font-size: 13px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 15px;
+  color: #7F8C8D;
+}
+
+.footer ul li a {
+  padding: 0 0 5px 0;
+  display: block;
+}
+
+.footer a {
+  color: #78828D
+}
+
+.supportLi h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 0 !important;
+  padding-bottom: 0;
+}
+
+.newsletter-box input#appendedInputButton {
+  background: #FFFFFF;
+  display: inline-block;
+  float: left;
+  height: 30px;
+  clear: both;
+  width: 100%;
+}
+
+.newsletter-box .btn {
+  border: medium none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  height: 40px;
+  padding: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.newsletter-box {
+  overflow: hidden;
+}
+.bg-gray {
+  background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
+  box-shadow: 0 1px 0 #B4B3B3;
+}
+
+.social li {
+  background: none repeat scroll 0 0 #B5B5B5;
+  border: 2px solid #B5B5B5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  float: left;
+  height: 36px;
+  line-height: 36px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  text-align: center;
+  width: 36px;
+  transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+.social li:hover {
+  transform: scale(1.15) rotate(360deg);
+  -webkit-transform: scale(1.1) rotate(360deg);
+  -moz-transform: scale(1.1) rotate(360deg);
+  -ms-transform: scale(1.1) rotate(360deg);
+  -o-transform: scale(1.1) rotate(360deg);
+}
+
+.social li a {
+  color: #EDEFF1;
+}
+
+.social li:hover {
+  border: 2px solid #2c3e50;
+  background: #2c3e50;
+}
+
+.social li a i {
+  font-size: 16px;
+  margin: 0 0 0 5px;
+  color: #EDEFF1 !important;
+}
+
+.footer-bottom {
+  background: #E3E3E3;
+  border-top: 1px solid #DDDDDD;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-bottom p.pull-left {
+  padding-top: 6px;
+}
+
+.payments {
+  font-size: 1.5em; 
+}
+
+.navbar-fixed-top {
+    min-height: 50px;
+}
+
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
